@@ -206,8 +206,40 @@ const questionsData = {
       options: ["They", "dance", "well", "none"],
       correct: "dance"
     }
-  ]
-  , "Essay": [
+  ],
+  "Coding": [
+  {
+    question: `What is the output?\n\nBEGIN\n  x ← 2\n  y ← 3\n  IF x * y > x + y THEN\n    PRINT "Multiply wins"\n  ELSE\n    PRINT "Add wins"\nEND`,
+    options: ["Multiply wins", "Add wins", "Error", "5"],
+    correct: "Multiply wins"
+  },
+  {
+    question: `What is the final value of count?\n\ncount ← 0\nFOR i ← 1 TO 4\n  FOR j ← 1 TO i\n    count ← count + 1\nEND FOR`,
+    options: ["10", "6", "4", "8"],
+    correct: "10"
+  },
+  {
+    question: `What is printed?\n\narr ← [2, 4, 6, 8]\nsum ← 0\nFOR i ← 0 TO LENGTH(arr)-1\n  IF arr[i] MOD 4 = 0 THEN\n    sum ← sum + arr[i]\nPRINT sum`,
+    options: ["12", "8", "10", "18"],
+    correct: "12"
+  },
+  {
+    question: `What will be printed?\n\nx ← 3\ny ← 0\nWHILE x > 0 DO\n  y ← y + x\n  x ← x - 1\nPRINT y`,
+    options: ["6", "3", "0", "1"],
+    correct: "6"
+  },
+  {
+    question: `What does this pseudocode compute?\n\nn ← 5\nfact ← 1\nWHILE n > 1 DO\n  fact ← fact * n\n  n ← n - 1\nPRINT fact`,
+    options: ["120", "25", "5", "24"],
+    correct: "120"
+  },
+  {
+    question: `What is the output of the following pseudocode?\n\nFUNCTION recur(n)\n  IF n = 1 THEN\n    RETURN 1\n  ELSE\n    RETURN n + recur(n - 1)\n\nPRINT recur(4)`,
+    options: ["10", "6", "4", "24"],
+    correct: "10"
+  }
+], 
+  "Essay": [
     {
       question: "Write an essay on the importance of discipline in student life.",
       options: [],
