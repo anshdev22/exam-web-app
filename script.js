@@ -55,7 +55,7 @@ function loadQuestion() {
     questionText.textContent = questionsData.Essay[0].question;
   } else {
     const questionObj = questionsData[currentSection][currentQuestionIndex];
-    questionText.textContent = `Q${currentQuestionIndex + 1}. ${questionObj.question}`;
+    questionText.innerHTML = `Q${currentQuestionIndex + 1}. ${questionObj.question.replace(/\n/g, '<br>')}`;
     optionsContainer.innerHTML = "";
     questionObj.options.forEach((opt, idx) => {
       const radio = document.createElement("input");
