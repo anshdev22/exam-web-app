@@ -208,70 +208,133 @@ const questionsData = {
     }
   ],
  
-  "Coding": [
+ " Pseudocode ": [
   {
     question: `<pre><code>count = 0
 FOR i = 1 TO 4
   FOR j = 1 TO i
     count = count + 1
   END FOR
-END FOR</code></pre>
-What is the final value of count?`,
-    options: ["6", "8", "10", "12"],
+END FOR
+PRINT count</code></pre>
+What is the output?`,
+    options: ["10", "6", "4", "8"],
     correct: "10"
   },
   {
-    question: `<pre><code>x = 3
-y = 2
-IF x &gt; y THEN
-  IF y &gt; 0 THEN
-    x = x + y
+    question: `<pre><code>a = 10
+b = 5
+IF a > b THEN
+  IF b > 3 THEN
+    a = a - b
   ELSE
-    x = x - y
+    b = b - a
   END IF
 END IF
-PRINT x</code></pre>
-What is printed?`,
-    options: ["1", "3", "5", "6"],
+PRINT a</code></pre>
+What is the output?`,
+    options: ["5", "10", "3", "-5"],
     correct: "5"
   },
   {
-    question: `<pre><code>n = 5
-fact = 1
-FOR i = 1 TO n
-  fact = fact * i
+    question: `<pre><code>sum = 0
+FOR i = 1 TO 4
+  sum = sum + (i * i - i)
 END FOR
-PRINT fact</code></pre>
+PRINT sum</code></pre>
 What is the output?`,
-    options: ["15", "60", "120", "720"],
-    correct: "120"
+    options: ["20", "26", "30", "36"],
+    correct: "26"
+  },
+  {
+    question: `<pre><code>a = 1
+b = 1
+FOR i = 1 TO 4
+  c = a + b
+  a = b
+  b = c
+END FOR
+PRINT c</code></pre>
+What is the output?`,
+    options: ["5", "8", "13", "3"],
+    correct: "8"
   },
   {
     question: `<pre><code>sum = 0
-FOR i = 1 TO 5
-  IF i MOD 2 = 0 THEN
+FOR i = 1 TO 10
+  IF i MOD 3 == 0 THEN
+    CONTINUE
+  END IF
+  sum = sum + i
+END FOR
+PRINT sum</code></pre>
+What is the result?`,
+    options: ["40", "37", "42", "45"],
+    correct: "37"
+  },
+  {
+    question: `<pre><code>fact = 1
+sum = 0
+FOR i = 1 TO 4
+  fact = fact * i
+  sum = sum + fact
+END FOR
+PRINT sum</code></pre>
+What is the value?`,
+    options: ["33", "24", "50", "10"],
+    correct: "33"
+  },
+  {
+    question: `<pre><code>arr = [2, 4, 6, 8, 10]
+sum = 0
+FOR i = 0 TO 4
+  IF arr[i] MOD 4 == 0 THEN
     sum = sum + i
   END IF
 END FOR
 PRINT sum</code></pre>
-What is printed?`,
-    options: ["6", "8", "10", "12"],
-    correct: "6"
+What index sum is printed?`,
+    options: ["1", "3", "4", "2"],
+    correct: "4"
   },
   {
-    question: `<pre><code>FUNCTION recur(n)
-  IF n = 0 THEN
-    RETURN 0
-  ELSE
-    RETURN n + recur(n - 1)
+    question: `<pre><code>x = 3
+y = 2
+FOR i = 1 TO 3
+  x = x + y
+  y = y * 2
+END FOR
+PRINT x</code></pre>
+What is the final value of x?`,
+    options: ["11", "9", "15", "17"],
+    correct: "17"
+  },
+  {
+    question: `<pre><code>charArr = ["A", "B", "C", "D"]
+FOR i = 0 TO 3
+  IF i MOD 2 == 0 THEN
+    PRINT charArr[i]
   END IF
-END FUNCTION
-PRINT recur(4)</code></pre>
+END FOR</code></pre>
 What is printed?`,
-    options: ["4", "6", "8", "10"],
-    correct: "10"
+    options: ["AC", "BD", "ABCD", "AD"],
+    correct: "AC"
+  },
+  {
+    question: `<pre><code>x = 0
+FOR i = 1 TO 5
+  x = x + i
+  IF x > 6 THEN
+    BREAK
+  END IF
+END FOR
+PRINT x</code></pre>
+What is printed?`,
+    options: ["6", "7", "5", "10"],
+    correct: "7"
   }
 ]
+
 
 
   , "Essay": [
